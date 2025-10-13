@@ -1,8 +1,49 @@
+:root{
+    --main: #122353; /*Buttons, header, and more*/
+    --secundary: #F1F5F9; /*Font, and others, background*/
+    --third: #111827; /*Font*/
+}
 *{
     margin: 0px 0px 0px 0px;
     padding: 0px 0px 0px 0px;
 }
 body{
-    color: white;
-    background: rebeccapurple;
+    color: var(--secundary);
+    background: var(--secundary);
+    font-size: 1.2rem;
+    font-family: "Inter";
+    font-weight: 500;
+}
+section{
+    padding: 0px 15px 0 15px;
+}
+
+/*--------------------------------------ENTRANCE PAGE--------------------------------------*/
+section:first-child{
+    background-color: var(--main);
+}
+section:first-child header{
+    display: flex;
+    align-items: center;
+    height: 3.2rem;
+}
+section:first-child header div:first-child{
+    display: flex;
+    align-items: center;
+}
+section:first-child header div:first-child div img{
+    height: 2rem;
+    border-right: 2px solid var(--secundary);
+    padding-right: 20px;
+    margin-right: 20px;
+}
+section:first-child header div:first-child nav ul{
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+}
+section:first-child header div:first-child nav ul li a{
+    text-decoration: none;
+    font-weight: 700;
+    color: var(--secundary);
 }
