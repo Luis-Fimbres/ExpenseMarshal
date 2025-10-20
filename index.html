@@ -1,33 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ExpenseMarshal</title>
+    <link rel="icon" href="./img/logo_and_header/ExpenseMarshal_Logo_White_32x32.png" type="image/png" sizes="32x32">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/size_style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+
 </head>
+
 <body>
+    <!-------------------------------------------HEADER--------------------------------------------->
     <section>
         <header>
             <div>
                 <div>
-                    <img src="./img/logo/ExpenseMarshal Logo (white).png" alt="COMPANY LOGO">
+                    <img loading="eager" src="./img/logo_and_header/ExpenseMarshal Logo (white).png" alt="COMPANY LOGO">
                 </div>
                 <nav>
                     <ul>
-                        <li><a href="">Home</a></li>
+                        <li><a href="">Dashboard</a></li>
                         <li><a href="">About</a></li>
                         <li><a href="">Contact</a></li>
                     </ul>
                 </nav>
             </div>
             <div>
-
+                <a href="">Sign-Up</a>
+                <div title="Log-In">
+                    <div>
+                        <!--I copied the code from the (user-icon), changed and pasted it here - Fimbres-->
+                        <svg viewBox="0 0 60.671 60.671">
+                            <g>
+                                <ellipse cx="30.336" cy="12.097" rx="11.997" ry="12.097"/>
+                                <path d="M35.64,30.079H25.031c-7.021,0-12.714,5.739-12.714,12.821v17.771h36.037V42.9C48.354,35.818,42.661,30.079,35.64,30.079z" />
+                            </g>
+                        </svg>
+                    </div>
+                </div>
             </div>
         </header>
     </section>
+    <div id="top_space">Howdy!: this is hidden text</div>
+    <!-------------------------------------------HERO--------------------------------------------->
+    <section id="hero">
+        <div>
+            <p>Track your expenses easily, <br>take control of you money!</p>
+        </div>
+        <div class="buttons">
+            <button>Join Now!</button>
+            <button>Learn More</button>
+        </div>
+    </section>
+    <!-------------------------------------------SERVICES--------------------------------------------->
+    <section id="services">
+        <div><p>Main Services</p></div>
+        <div id="services">
+            <div>
+                <h2>Categories</h2>
+                <div><svg viewBox="0 0 80 80"><path d="M31.1111 0H4.44444C3.2657 0 2.13524 0.468252 1.30175 1.30175C0.468252 2.13524 0 3.2657 0 4.44444V31.1111C0 32.2899 0.468252 33.4203 1.30175 34.2538C2.13524 35.0873 3.2657 35.5556 4.44444 35.5556H31.1111C32.2899 35.5556 33.4203 35.0873 34.2538 34.2538C35.0873 33.4203 35.5556 32.2899 35.5556 31.1111V4.44444C35.5556 3.2657 35.0873 2.13524 34.2538 1.30175C33.4203 0.468252 32.2899 0 31.1111 0ZM75.5556 0H48.8889C47.7102 0 46.5797 0.468252 45.7462 1.30175C44.9127 2.13524 44.4444 3.2657 44.4444 4.44444V31.1111C44.4444 32.2899 44.9127 33.4203 45.7462 34.2538C46.5797 35.0873 47.7102 35.5556 48.8889 35.5556H75.5556C76.7343 35.5556 77.8648 35.0873 78.6983 34.2538C79.5318 33.4203 80 32.2899 80 31.1111V4.44444C80 3.2657 79.5318 2.13524 78.6983 1.30175C77.8648 0.468252 76.7343 0 75.5556 0ZM31.1111 44.4444H4.44444C3.2657 44.4444 2.13524 44.9127 1.30175 45.7462C0.468252 46.5797 0 47.7102 0 48.8889V75.5556C0 76.7343 0.468252 77.8648 1.30175 78.6983C2.13524 79.5318 3.2657 80 4.44444 80H31.1111C32.2899 80 33.4203 79.5318 34.2538 78.6983C35.0873 77.8648 35.5556 76.7343 35.5556 75.5556V48.8889C35.5556 47.7102 35.0873 46.5797 34.2538 45.7462C33.4203 44.9127 32.2899 44.4444 31.1111 44.4444ZM62.2222 44.4444C65.7005 44.4445 69.1023 45.4648 72.0064 47.3791C74.9105 49.2934 77.1892 52.0175 78.5604 55.2141C79.9315 58.4107 80.3348 61.9393 79.7204 65.3628C79.1059 68.7864 77.5007 71.9545 75.1034 74.4747C72.7062 76.9949 69.6223 78.7566 66.2338 79.5415C62.8453 80.3264 59.3009 80.1 56.0398 78.8904C52.7786 77.6808 49.9439 75.5411 47.8868 72.7363C45.8297 69.9316 44.6406 66.585 44.4667 63.1111L44.4444 62.2222L44.4667 61.3333C44.6947 56.778 46.6649 52.4845 49.9697 49.341C53.2745 46.1975 57.6611 44.4444 62.2222 44.4444Z"/></svg></div>
+                <p>Organize your spending and earnings into easy-to-manage categories for a clearer financial picture</p>
+            </div>
+            <div>
+                <h2>Log Income & Expenses</h2>
+                <div><svg viewBox="0 0 68 80"><path fill-rule="evenodd" clip-rule="evenodd" d="M46.7327 0H0.332774V46.0593H8.76918V8.37447H43.2316L59.3872 24.4113V46.0593H67.8234V20.9361L46.7327 0ZM0 79.5568V54.4391H5.69651V75.1253H16.5715V79.5568H0ZM30.2858 53.9959C34.2621 53.9959 37.3097 55.2485 39.4287 57.7538C41.4645 60.1528 42.4823 63.2371 42.4822 67.0068C42.4822 71.131 41.2798 74.4104 38.8751 76.8449C36.8037 78.9483 33.9406 80 30.2858 80C26.3095 80 23.2619 78.7474 21.1429 76.2421C19.1073 73.8431 18.0894 70.7115 18.0894 66.8472C18.0894 62.8056 19.2918 59.5677 21.6966 57.1334C23.7798 55.0417 26.6429 53.9959 30.2858 53.9959ZM30.268 58.4274C28.2085 58.4274 26.6192 59.2782 25.5 60.98C24.4882 62.5161 23.9823 64.4896 23.9823 66.9004C23.9823 69.6895 24.5834 71.8521 25.7857 73.3883C26.9167 74.8418 28.4168 75.5685 30.2858 75.5685C32.3335 75.5685 33.9287 74.7118 35.0716 72.9983C36.0834 71.4856 36.5893 69.4885 36.5893 67.0068C36.5893 64.277 35.9882 62.1439 34.7859 60.6076C33.6549 59.1541 32.1488 58.4274 30.2678 58.4274M68 65.5002V78.316C66.5476 78.8006 65.5238 79.1197 64.9285 79.2732C63.0833 79.7577 61.1012 80 58.9821 80C54.8153 80 51.6427 78.9601 49.4643 76.8802C47.0476 74.5877 45.8392 71.3911 45.8392 67.2904C45.8392 62.5752 47.3392 59.0182 50.3392 56.6193C52.5178 54.8705 55.4583 53.996 59.1606 53.9959C62.3274 53.9959 65.2739 54.569 68 55.7153L66.0536 60.1291C64.7678 59.4911 63.6428 59.0449 62.6784 58.7907C61.7141 58.5367 60.6547 58.4097 59.4999 58.4097C56.7381 58.4097 54.7024 59.3019 53.3927 61.0863C52.2856 62.5988 51.732 64.59 51.732 67.06C51.732 70.0262 52.5654 72.2597 54.2321 73.7604C55.5654 74.9658 57.2202 75.5685 59.1964 75.5685C60.3511 75.5685 61.4464 75.3735 62.482 74.9836V69.9315H58.1251V65.5002H68Z"/></svg></div>
+                <p>Quickly record all your financial movements to keep track of where your money goes and comes from</p>
+            </div>
+            <div>
+                <h2>Reports</h2>
+                <div><svg viewBox="0 0 64 80"><path d="M64 24L40 0H8C5.87827 0 3.84344 0.842854 2.34315 2.34315C0.842854 3.84344 0 5.87827 0 8V72C0 74.1217 0.842854 76.1566 2.34315 77.6569C3.84344 79.1571 5.87827 80 8 80H56C58.1217 80 60.1566 79.1571 61.6569 77.6569C63.1571 76.1566 64 74.1217 64 72V24ZM20 68H12V32H20V68ZM36 68H28V44H36V68ZM52 68H44V56H52V68ZM40 28H36V8L56 28H40Z"/></svg></div>
+                <p>View simple, insightful reports that show trends and help you make smarter money decisions</p>
+            </div>
+        </div>
+    </section>
+    <!-------------------------------------------COST--------------------------------------------->
+    <section id="cost">
+        <p>ExpenseMarshal's Price</p>
+        <div>
+            <div id="cost_free">
+                <p><b>The Only Plan</b></p>
+                <h3>$0, FREE!</h3>
+                <p>Features:</p>
+                <ul>
+                    <li><img src="./img/home/cost/Checkmark_White.png">Log and manage income & expenses</li>
+                    <li><img src="./img/home/cost/Checkmark_White.png">Create custom categories</li>
+                    <li><img src="./img/home/cost/Checkmark_White.png">View clear financial reports</li>
+                    <li><img src="./img/home/cost/Checkmark_White.png">Filter and search transactions</li>
+                    <li><img src="./img/home/cost/Checkmark_White.png">Wireframing + Final UI Design</li>
+                    <li><img src="./img/home/cost/Checkmark_White.png">100% free and open source</li>
+                </ul>
+                <button>Sign-Up!</button>
+            </div>
+        </div>
+    </section>
 </body>
+
 </html>
