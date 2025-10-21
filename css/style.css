@@ -28,50 +28,57 @@ button{
 }
 
 /*--------------------------------------ENTRANCE PAGE: HEADER--------------------------------------*/
-section:first-child{
+section#header{
     background-color: var(--main);
     position: fixed;
     width: 100%;
     margin: 0px 0px 0px 0px;
 }
-section:first-child header{
+section#header header div#hamburger{
+    display: none;
+}
+section#header header{
     display: flex;
     align-items: center;
     height: 3.2rem;
     justify-content: space-between;
 }
-section:first-child header div:first-child{
+section#header header div#header_left div{
     display: flex;
     align-items: center;
 }
-section:first-child header div:first-child div img{
+section#header header > div{
+    display: flex;
+    align-items: center;
+}
+section#header header > div img{
     height: 2rem;
     border-right: 2px solid var(--secundary);
     padding-right: 20px;
     margin-right: 20px;
     margin-left: 15px;
 }
-section:first-child header div:first-child nav ul{
+section#header header > div nav ul{
     display: flex;
     gap: 20px;
     list-style-type: none;
 }
-section:first-child header div:first-child nav ul li a, section:first-child header div:nth-child(2) a{
+section#header header > div nav ul li a, section#header header > div > a{
     text-decoration: none;
     font-weight: 700;
     color: var(--secundary);
     border: 2px solid var(--main);
     text-wrap: nowrap;
 }
-section:first-child header div:first-child nav ul li a:hover, section:first-child header div:nth-child(2) a:hover{
+section#header header > div nav ul li a:hover, section#header header > div > a:hover{
     border-bottom: 2px solid var(--secundary);    
 }
-section:first-child header div:nth-child(2){
+section#header header div#header_right{
     display: flex;
     margin-left: 15px;
     align-items: center;
 }
-section:first-child header div:nth-child(2) div div{
+section#header header div#header_right div div{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -80,15 +87,16 @@ section:first-child header div:nth-child(2) div div{
     border-radius: 3px;
     border: 4px solid var(--secundary);
     margin-right: 15px;
+    margin-left: 10px;
 }
-section:first-child header div:nth-child(2) div div:hover{
+section#header header div#header_right div div:hover{
     background: var(--main);
     cursor: pointer;
 }
-section:first-child header div:nth-child(2) div svg{
+section#header header div#header_right div svg{
     width: 20px;
 }
-section:first-child header div:nth-child(2) div svg g ellipse, section:first-child header div:nth-child(2) div svg g path{
+section#header header div#header_right div svg g ellipse, section#header header div#header_right div svg g path{
     fill: var(--secundary);
 }
 div#top_space{
@@ -213,14 +221,15 @@ section#cost > p{
     text-align: center;
     margin-bottom: 15px;
 }
-section#cost img{
+section#cost div div#cost_free ul > li > img{
     padding: 0px 5px 0 5px;
     width: 1.5rem;
 }
-
 section#cost > div{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: auto auto 1fr 1fr;
+    border: 5px solid var(--third);
+    box-shadow: 0 0 5px var(--main);
 }
 section#cost div div#cost_free{
     background-image: url("../img/home/services/service_back_dark.png");
@@ -229,11 +238,14 @@ section#cost div div#cost_free{
     flex-direction: column;
     width: fit-content;
     padding: 20px;
-    box-shadow: 0 0 5px var(--main);
 }
 section#cost div div#cost_free h3{
-    padding: 8px 0px 8px 0px;
-    font-size: 2.5rem;
+    padding: 0px 0px 8px 0px;
+    font-size: 2.8rem;
+}
+section#cost div div#cost_free p:first-child{
+    font-size: 1.0rem;
+    padding-bottom: 0px;
 }
 section#cost div div#cost_free p:first-child, section#cost div div#cost_free h3{
     text-align: center;
@@ -242,11 +254,6 @@ section#cost div div#cost_free ul{
     list-style-type: none;
     text-align: left;
     height: 100%;
-}
-section#cost div div#cost_free p:first-child{
-    background-color: var(--main);
-    padding: 6px 0px 6px 0px;
-    border-radius: 10px;
 }
 section#cost div div#cost_free ul, section#cost div div#cost_free p:nth-child(3){
     background-color: var(--main);
@@ -261,6 +268,7 @@ section#cost div div#cost_free ul > li{
     align-items: center;
     font-size: 1.4rem;
     margin-bottom: 7px;
+    text-wrap: nowrap;
 }
 section#cost div div#cost_free button{
     margin-top: 12px;
@@ -273,5 +281,32 @@ section#cost div div#cost_free button:hover{
     background-color: var(--main_dark);
     text-decoration: underline;
     cursor: pointer;
+}
+section#cost div div#cost_text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    color: var(--third);
+}
+section#cost div div#cost_text h3{
+    text-align: center;
+    font-weight: 800;
+    padding-top: 20px;
+    font-size: 3vw;
+}
+section#cost div div#cost_text p{
+    font-size: 2.5vw;
+    padding: 5px 20px 20px 20px;
+    text-align: center;
+}
+
+/*--------------------------------------ENTRANCE PAGE: BOTTOM--------------------------------------*/
+section.bottom{
+    color: var(--third);
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 1rem;
 }
 
