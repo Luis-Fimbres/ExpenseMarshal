@@ -27,6 +27,9 @@ button{
     background-color: var(--main);
 }
 
+
+/*------------------------------------------ENTRANCE PAGE------------------------------------------*/
+/*------------------------------------------ENTRANCE PAGE------------------------------------------*/
 /*--------------------------------------ENTRANCE PAGE: HEADER--------------------------------------*/
 section#header{
     background-color: var(--main);
@@ -106,6 +109,16 @@ div#top_space{
     user-select: none;
     color: var(--main);
     background-color: var(--main);
+}
+section#header header button{
+    padding: 0px 0px 0px 0px;
+    border: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+    border: none;
+    background-color: transparent;
+}
+section#header header button:hover{
+    cursor: pointer;
 }
 
 /*--------------------------------------ENTRANCE PAGE: HERO--------------------------------------*/
@@ -310,3 +323,30 @@ section.bottom{
     font-size: 1rem;
 }
 
+
+
+
+
+/*-----------------------------------------LOG--IN PAGE--------------------------------------------*/
+/*-----------------------------------------LOG--IN PAGE--------------------------------------------*/
+/*--------------------------------------LOG--IN PAGE: HEADER---------------------------------------*/
+section#header header div#header_left div svg{
+    fill: var(--secundary);
+    width: 34px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+section#header header div#header_left div a{
+    font-weight: 700;
+    font-size: 1.2rem;
+    border: 2px solid var(--main);
+    color: var(--secundary);
+    text-decoration: none;
+}
+section#header header div#header_left div a:hover{
+    border-bottom: 2px solid var(--secundary);
+    cursor: pointer;
+}
+section#header header div#header_right > a.log-in_sign-up{
+    margin-right: 15px;
+}
