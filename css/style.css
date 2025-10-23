@@ -4,6 +4,7 @@
     --secundary: #F1F5F9; /*Font, and others, background*/
     --third: #111827; /*Font*/
     --vivid_blue: #2563EB; /*Extra*/
+    --input_background: #d9d9d9; /*Background for inputs*/
 }
 *{
     margin: 0px 0px 0px 0px;
@@ -317,7 +318,7 @@ section#cost div div#cost_text p{
 /*--------------------------------------ENTRANCE PAGE: BOTTOM--------------------------------------*/
 section.bottom{
     color: var(--third);
-    margin-top: 15px;
+    margin-top: 30px;
     margin-bottom: 15px;
     text-align: center;
     font-size: 1rem;
@@ -327,9 +328,13 @@ section.bottom{
 
 
 
-/*-----------------------------------------LOG--IN PAGE--------------------------------------------*/
-/*-----------------------------------------LOG--IN PAGE--------------------------------------------*/
-/*--------------------------------------LOG--IN PAGE: HEADER---------------------------------------*/
+/*-----------------------------------------LOG-IN PAGE--------------------------------------------*/
+/*-----------------------------------------LOG-IN PAGE--------------------------------------------*/
+/*--------------------------------------LOG-IN PAGE: HEADER---------------------------------------*/
+body#log-in_body{
+    display: inline;
+}
+
 section#header header div#header_left div svg{
     fill: var(--secundary);
     width: 34px;
@@ -347,6 +352,180 @@ section#header header div#header_left div a:hover{
     border-bottom: 2px solid var(--secundary);
     cursor: pointer;
 }
+section#header header div#header_left div a button svg:hover{
+    fill: var(--third);
+}
+section#header header div#header_left div > a:first-child:hover{
+    border: 2px solid var(--main);
+}
 section#header header div#header_right > a.log-in_sign-up{
     margin-right: 15px;
+}
+
+/*--------------------------------------LOG--IN PAGE: LOG-IN---------------------------------------*/
+section#log-in{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    max-width: 1830px;
+}
+section#log-in div#log-in_picture{
+    overflow: hidden;
+    width: 100%;
+    border-right: 5px solid var(--main);
+    max-width: 565.062px;
+}
+section#log-in div#log-in_picture img{
+    height: 100%;
+    float: right;
+}
+section#log-in > div{
+    display: flex;
+    border: 5px solid var(--main);
+    box-shadow: 0 0 5px var(--main);
+}
+section#log-in > div div#log-in_form_div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+    margin: 30px;
+}
+section#log-in > div div#log-in_form_div div img{
+    width: 520px;
+    margin-bottom: 15px;
+}
+section#log-in > div div#log-in_form_div form#log-in_form fieldset{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+section#log-in > div div#log-in_form_div form#log-in_form fieldset label{
+    font-family: 'Inter';
+    font-size: 1.7rem;
+    font-weight: 800;
+    text-align: left;
+    width: 100%;
+    color: var(--third);
+}
+section#log-in > div div#log-in_form_div form#log-in_form fieldset button{
+    border: 3px solid var(--vivid_blue);
+    width: fit-content;
+    font-family: 'Inter';
+    font-size: 1.2rem;
+    font-weight: 800;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+section#log-in > div div#log-in_form_div form#log-in_form fieldset button:hover{
+    background-color: var(--main_dark);
+    cursor: pointer;
+    text-decoration: underline;
+}
+section#log-in > div div#log-in_form_div form#log-in_form fieldset input{
+    height: 30px;
+    padding: 8px 12px 8px 12px;
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    background-color: var(--input_background);
+    border: 2px solid var(--main);
+    border-radius: 5px;
+    width: 425px;
+}
+section#log-in > div div#log-in_form_div form#log-in_form fieldset, section#log-in > div div#log-in_form_div form#log-in_form fieldset{
+    border: none;
+}
+section#log-in > div div#log-in_form_div > div:nth-child(3){
+    margin-top: 15px;
+    color: var(--third);
+}
+
+/*--------------------------------------SIGN-UP PAGE: SIGN-up---------------------------------------*/
+section#sign-up{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    max-width: 1830px;
+}
+section#sign-up div#sign-up_picture{
+    overflow: hidden;
+    width: 100%;
+    border-right: 5px solid var(--main);
+    max-width: 565.062px;
+}
+section#sign-up div#sign-up_picture img{
+    height: 100%;
+    float: right;
+    margin-right: -80px;
+}
+section#sign-up > div{
+    display: flex;
+    border: 5px solid var(--main);
+    box-shadow: 0 0 5px var(--main);
+}
+section#sign-up > div div#sign-up_form_div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+    margin: 30px;
+}
+section#sign-up > div div#sign-up_form_div div img{
+    width: 520px;
+    margin-bottom: 15px;
+}
+section#sign-up > div div#sign-up_form_div form#sign-up_form fieldset{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+section#sign-up > div div#sign-up_form_div form#sign-up_form fieldset label{
+    font-family: 'Inter';
+    font-size: 1.7rem;
+    font-weight: 800;
+    text-align: left;
+    width: 100%;
+    color: var(--third);
+}
+section#sign-up > div div#sign-up_form_div form#sign-up_form fieldset button{
+    border: 3px solid var(--vivid_blue);
+    width: fit-content;
+    font-family: 'Inter';
+    font-size: 1.2rem;
+    font-weight: 800;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+section#sign-up > div div#sign-up_form_div form#sign-up_form fieldset button:hover{
+    background-color: var(--main_dark);
+    cursor: pointer;
+    text-decoration: underline;
+}
+section#sign-up > div div#sign-up_form_div form#sign-up_form fieldset input{
+    height: 30px;
+    padding: 8px 12px 8px 12px;
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    background-color: var(--input_background);
+    border: 2px solid var(--main);
+    border-radius: 5px;
+    width: 425px;
+}
+section#sign-up > div div#sign-up_form_div form#sign-up_form fieldset, section#sign-up > div div#sign-up_form_div form#sign-up_form fieldset{
+    border: none;
+}
+section#sign-up > div div#sign-up_form_div > div:nth-child(3){
+    margin-top: 15px;
+    color: var(--third);
+}
+section#sign-up > div div#sign-up_form_div div form#sign-up_form div{
+    color: var(--third);
+    word-wrap: wrap;
+    width: 425px;
+    font-family: 'Inter';
+    margin-bottom: 15px;
 }

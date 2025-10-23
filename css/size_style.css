@@ -1,3 +1,5 @@
+/*---------------ENTRANCE PAGE------------------------------------*/
+/*---------------ENTRANCE PAGE------------------------------------*/
 /*-----------ENTRANCE PAGE: Header--------------------------------*/
 @media (max-width: 700px){
     section#header header{
@@ -51,6 +53,9 @@
     section#header header div#hamburger svg:hover{
         cursor: pointer;
         fill: var(--thrid);
+    }
+    section#header header div#header_right a.log-in_sign-up{
+        display: inline;
     }
 }
 
@@ -262,9 +267,108 @@
 }
 
 
+
+/*---------------LOG-IN PAGE------------------------------------*/
+/*---------------LOG-IN PAGE------------------------------------*/
+/*-----------LOG-IN PAGE: Log-in--------------------------------*/
+@media (min-width: 1830px){
+    body#log-in_body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    section#log-in, section#sign-up{
+        width: 98%;
+    }
+}
+@media (max-width: 930px){
+    section#log-in div{
+        flex-direction: column;
+        place-items: center;
+    }
+    section#log-in > div > div#log-in_picture{
+        display: none;
+    }
+}
+@media (max-width: 650px){
+    section#log-in > div div#log-in_form_div div img{
+        width: 70vw;
+        margin-bottom: 2vw;
+    }
+    section#log-in > div div#log-in_form_div form#log-in_form fieldset label{
+        font-size: 4vw;
+    }
+    section#log-in > div div#log-in_form_div form#log-in_form fieldset button{
+        font-size: 3vw;
+        padding-left: 4.8vw;
+        padding-right: 4.8vw;
+    }
+    section#log-in > div div#log-in_form_div form#log-in_form fieldset input{
+        height: 5vw;
+        padding: 1vw 1.5vw 1vw 1.5vw;
+        font-size: 3vw;
+        margin-bottom: 2vw;
+        width: 62vw;
+    }
+    section#log-in > div div#log-in_form_div > div:nth-child(3){
+        width: 100%;
+        margin-top: 2vw;
+        font-size: 3vw;
+        text-align: center;
+    }
+}
+
+
+
+/*---------------SIGN-UP PAGE------------------------------------*/
+/*---------------SIGN-UP PAGE------------------------------------*/
+/*-----------SIGN-UP PAGE: Log-in--------------------------------*/
+@media (max-width: 930px){
+    section#sign-up div{
+        flex-direction: column;
+        place-items: center;
+    }
+    section#sign-up > div > div#sign-up_picture{
+        display: none;
+    }
+}
+@media (max-width: 650px){
+    section#sign-up > div div#sign-up_form_div div img{
+        width: 70vw;
+        margin-bottom: 2vw;
+    }
+    section#sign-up > div div#sign-up_form_div form#sign-up_form fieldset label{
+        font-size: 4vw;
+    }
+    section#sign-up > div div#sign-up_form_div form#sign-up_form fieldset button{
+        font-size: 3vw;
+        padding-left: 4.8vw;
+        padding-right: 4.8vw;
+    }
+    section#sign-up > div div#sign-up_form_div form#sign-up_form fieldset input{
+        height: 5vw;
+        padding: 1vw 1.5vw 1vw 1.5vw;
+        font-size: 3vw;
+        margin-bottom: 2vw;
+        width: 62vw;
+    }
+    section#sign-up > div div#sign-up_form_div > div:nth-child(3){
+        width: 100%;
+        margin-top: 2vw;
+        font-size: 3vw;
+        text-align: center;
+    }
+    section#sign-up > div div#sign-up_form_div div form#sign-up_form div{
+        width: 62vw;
+        margin-bottom: 2vw;
+        font-size: 3vw;
+    }
+}
+
+
 /*----------------MINIMUM WIDTH: 350px---------------*/
 @media (max-width: 350px){
-    body{
+    body, body#log-in_body{
         display: none;
     }
 }
