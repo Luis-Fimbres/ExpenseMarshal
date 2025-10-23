@@ -366,6 +366,56 @@
 }
 
 
+/*---------------DASHBOARD PAGE------------------------------------*/
+/*---------------DASHBOARD PAGE------------------------------------*/
+/*---------------DASHBOARD PAGE--------------------------------*/
+@media (max-width: 954px){
+    section#balance_summary div#view_buttons{
+        float: none;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        margin-top: 15px;
+    }
+    section#balance_summary div#title1 h1{
+        margin-top: 10px;
+    }
+}
+@media (max-width: 800px){
+    section#expenses div#chart_div{
+        flex-direction: column;
+        gap: 15px;
+    }
+    section#balance_summary div#widgets{
+        gap: 10px;
+    }
+}
+@media (max-width: 700px){
+    div#d_main div#side_bar{
+        display: none;
+    }
+    section#balance_summary div#dashboard_top{
+        display: inline;
+    }
+    section#balance_summary div#dashboard_top h1{
+        font-weight: 800;
+        font-size: 3.5rem;
+    }
+    section#balance_summary div#view_buttons{
+        margin-top: 5px;
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 600px){
+    section#balance_summary div#widgets{
+        flex-direction: column;
+        place-items: center;
+    }
+}
+
+
+
+
 /*----------------MINIMUM WIDTH: 350px---------------*/
 @media (max-width: 350px){
     body, body#log-in_body{

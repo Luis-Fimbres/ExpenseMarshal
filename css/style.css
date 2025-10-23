@@ -5,6 +5,7 @@
     --third: #111827; /*Font*/
     --vivid_blue: #2563EB; /*Extra*/
     --input_background: #d9d9d9; /*Background for inputs*/
+    --widgets: #000e19; /*Background color for the widgets*/
 }
 *{
     margin: 0px 0px 0px 0px;
@@ -140,6 +141,9 @@ section#hero div:first-child p{
 section#hero div.buttons{
     display: flex;
     gap: 1.5vw;
+}
+section#hero div.buttons a{
+    text-decoration: none;
 }
 section#hero div.buttons button{
     font-size: 2.2vw;
@@ -284,14 +288,18 @@ section#cost div div#cost_free ul > li{
     margin-bottom: 7px;
     text-wrap: nowrap;
 }
-section#cost div div#cost_free button{
+section#cost div div#cost_free a{
+    text-decoration: none;
+}
+section#cost div div#cost_free a button{
     margin-top: 12px;
     color: var(--secundary);
     font-size: 1.5rem;
     font-weight: 600;
     justify-content: center;
+    width: 100%;
 }
-section#cost div div#cost_free button:hover{
+section#cost div div#cost_free a button:hover{
     background-color: var(--main_dark);
     text-decoration: underline;
     cursor: pointer;
@@ -528,4 +536,154 @@ section#sign-up > div div#sign-up_form_div div form#sign-up_form div{
     width: 425px;
     font-family: 'Inter';
     margin-bottom: 15px;
+}
+
+
+
+/*------------------------------------------DASHBOARD PAGE------------------------------------------*/
+/*------------------------------------------DASHBOARD PAGE------------------------------------------*/
+/*--------------------------------------DASHBOARD PAGE: SIDE BAR--------------------------------------*/
+section#header header a.h_dashboard:hover{
+    border-color: var(--main);
+}
+div#d_main{
+    display: flex;
+    min-height: 100vh;
+}
+div#d_main div#side_bar{
+    background-color: var(--main);
+    margin: 0px 0px 0px 0px;
+}
+div#d_main > div:nth-child(2){
+    width: 100%;
+}
+div#d_main div#side_bar > a > button#btn_dashboard{
+    border-top: 1.5px solid var(--secundary);
+}
+div#d_main div#side_bar > a >  button{
+    border: none;
+    width: 92px;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    padding: 20px 0px 20px 0px;
+    border-bottom: 1.5px solid var(--secundary);
+}
+div#d_main div#side_bar > a > button:hover{
+    background-color: var(--main_dark);
+    cursor: pointer;
+}
+div#d_main div#side_bar > a > button svg{
+    fill: var(--secundary);
+    stroke: var(--main);
+    height: 30px;
+    margin-bottom: 5px;
+}
+div#d_main div#side_bar > a > button p{
+    font-weight: 600;
+    font-size: 0.8rem;
+}
+div#d_main div#side_bar > a{
+    text-decoration: none;
+}
+
+/*--------------------------------------DASHBOARD PAGE: Quick Summary--------------------------------------*/
+section#balance_summary div#dashboard_top{
+    color: var(--third);
+    font-family: 'Inter';
+    text-align: center;
+    display: none;
+}
+section#balance_summary div#view_buttons{
+    float: right;
+    display: flex;
+    gap: 8px;
+}
+section#balance_summary div#title1 h1{
+    font-weight: 800;
+    font-size: 2.2rem;
+    color: var(--third);
+    margin-top: 20px;
+}
+section#balance_summary div#widgets{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 30px;
+}
+section#balance_summary div#widgets > div{
+    background-color: var(--widgets);
+    padding: 15px 15px 15px 15px;
+    width: 100%;
+    max-width: 280px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    color: var(--secundary);
+    border-radius: 15px;
+}
+section#balance_summary div#widgets > div h2{
+    font-size: 1.2rem;
+}
+section#balance_summary div#widgets > div p{
+    font-size: 1.8rem;
+}
+
+
+/*--------------------------------------DASHBOARD PAGE: Expenses by Category--------------------------------------*/
+section#expenses div#title2 h1{
+    font-weight: 800;
+    font-size: 2.2rem;
+    color: var(--third);
+    margin-top: 35px;
+}
+section#expenses div#chart_div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 45px;
+    margin-top: 20px;
+}
+section#expenses div#chart_div div#chart{
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    background: conic-gradient(
+        rgb(2, 2, 165) 0% 20%,
+        rgb(1, 113, 24) 20% 60%,
+        rgb(109, 13, 2) 60% 70%,
+        rgb(139, 0, 95) 70% 100%
+    );
+}
+section#expenses div#chart_div div#chart_categories > div{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 22px;
+    color: var(--third);
+}
+section#expenses div#chart_div div#chart_categories > div > div.holder{
+    width: 1.2rem;
+    height: 1.2rem;
+    background-color: pink;
+}
+
+/*--------------------------------------DASHBOARD PAGE: Recent Transactions--------------------------------------*/
+section#recent_transactions div#title3 h1{
+    font-weight: 800;
+    font-size: 2.2rem;
+    color: var(--third);
+    margin-top: 35px;
+}
+section#recent_transactions div#r_transactions{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+section#recent_transactions div#r_transactions div.trans{
+    width: 100%;
+    height: 32px;
+    background-color: rgb(70, 70, 86);
 }
