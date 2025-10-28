@@ -61,16 +61,13 @@
 
 /*-----------ENTRANCE PAGE: Hero--------------------------------*/
 @media (min-width: 1830px){
-    body{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
     section#hero{
         display: flex;
         flex-direction: column;
         padding: 2rem;
         width: 1720.087px;
+        margin-left: auto;
+        margin-right: auto;
     }
     section#hero div:first-child p{
         font-size: 5.5rem;
@@ -194,6 +191,8 @@
 @media (min-width: 1830px){
     section#cost{
         width: 1783.330px;
+        margin-left: auto;
+        margin-right: auto;
     }
     section#cost div div#cost_text h3{
         font-size: 3.5rem;
@@ -272,13 +271,10 @@
 /*---------------LOG-IN PAGE------------------------------------*/
 /*-----------LOG-IN PAGE: Log-in--------------------------------*/
 @media (min-width: 1830px){
-    body#log-in_body{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
     section#log-in, section#sign-up{
         width: 98%;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 @media (max-width: 930px){
@@ -368,7 +364,12 @@
 
 /*---------------DASHBOARD PAGE------------------------------------*/
 /*---------------DASHBOARD PAGE------------------------------------*/
-/*---------------DASHBOARD PAGE--------------------------------*/
+/*---------------DASHBOARD PAGE------------------------------------*/
+@media (min-width: 1600px){
+    div#d_main > div#dashboard_content{
+        max-width: 1490px;
+    }
+}
 @media (max-width: 954px){
     section#balance_summary div#view_buttons{
         float: none;
