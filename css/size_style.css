@@ -57,6 +57,28 @@
     section#header header div#header_right a.log-in_sign-up{
         display: inline;
     }
+    section#header > div#index_drop-down{
+        margin: 10px 10px 10px 12px;
+        text-align: center;
+    }
+    section#header > div#index_drop-down li{
+        margin-bottom: 10px;
+    }
+    section#header > div#index_drop-down a{
+        text-decoration: none;
+        color: var(--secundary);
+        font-size: 1.4rem;
+    }
+    section#header > div#index_drop-down a:hover{
+        text-decoration: underline;
+    }
+}
+
+@media (min-width: 701px){
+    section#header > div#index_drop-down{
+        position: fixed;
+        top: -100vh;
+    }
 }
 
 /*-----------ENTRANCE PAGE: Hero--------------------------------*/
@@ -318,7 +340,7 @@
 
 /*---------------SIGN-UP PAGE------------------------------------*/
 /*---------------SIGN-UP PAGE------------------------------------*/
-/*-----------SIGN-UP PAGE: Log-in--------------------------------*/
+/*-----------SIGN-UP PAGE: Sign-up--------------------------------*/
 @media (max-width: 930px){
     section#sign-up div{
         flex-direction: column;
@@ -366,7 +388,7 @@
 /*---------------DASHBOARD PAGE------------------------------------*/
 /*---------------DASHBOARD PAGE------------------------------------*/
 @media (min-width: 1600px){
-    div#d_main > div#dashboard_content{
+    div#d_main > div#dashboard_content > section{
         max-width: 1490px;
     }
 }
@@ -394,6 +416,35 @@
 @media (max-width: 700px){
     div#d_main div#side_bar{
         display: none;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        place-content: center;
+    }
+    div#d_main div#side_bar > a{
+        width: 80%;
+    }
+    div#d_main div#side_bar > a >  button{
+        width: 100%;
+        place-items: inherit;
+        padding: 15px 0px 15px 0px;
+    }
+    div#d_main div#side_bar > a >  button#btn_logout{
+        border-bottom: none;
+        margin-bottom: 3.2rem;
+    }
+    div#d_main div#side_bar > a >  button div{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0px 10px 0 10px;
+        gap: 30px;
+    }
+    div#d_main div#side_bar > a >  button div svg{
+        margin: 0px 0px 0px 0px;
+    }
+    div#d_main div#side_bar > a >  button div p{
+        font-size: 1.2rem;
     }
     section#balance_summary div#dashboard_top{
         display: inline;
@@ -405,6 +456,11 @@
     section#balance_summary div#view_buttons{
         margin-top: 5px;
         margin-bottom: 20px;
+    }
+}
+@media (max-height: 417px){
+    div#d_main div#side_bar{
+        place-content: initial;
     }
 }
 @media (max-width: 600px){
@@ -419,8 +475,20 @@
 
 /*----------------MINIMUM WIDTH: 350px---------------*/
 @media (max-width: 350px){
-    body, body#log-in_body{
+    main{
         display: none;
+    }
+    div#size_error{
+        display: flex;
+        flex-direction: column;
+        background: black;
+        color: var(--secundary);
+        height: 100%;
+        min-height: 100vh;
+        width: 100%;
+    }
+    div#size_error > p, div#size_error > h2{
+        margin: 10px;
     }
 }
 

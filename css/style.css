@@ -28,11 +28,16 @@ button{
     border: 2px solid var(--vivid_blue);
     background-color: var(--main);
 }
-
+div#size_error{
+    display: none;
+}
 
 /*------------------------------------------ENTRANCE PAGE------------------------------------------*/
 /*------------------------------------------ENTRANCE PAGE------------------------------------------*/
 /*--------------------------------------ENTRANCE PAGE: HEADER--------------------------------------*/
+section#header > div#index_drop-down{
+    display: none;
+}
 section#header{
     background-color: var(--main);
     position: fixed;
@@ -450,7 +455,7 @@ section#log-in > div div#log-in_form_div > div:nth-child(3){
     color: var(--third);
 }
 
-/*--------------------------------------SIGN-UP PAGE: SIGN-up---------------------------------------*/
+/*--------------------------------------SIGN-UP PAGE: Sign-up---------------------------------------*/
 section#sign-up{
     margin-top: 15px;
     margin-bottom: 15px;
@@ -548,14 +553,26 @@ section#header header a.h_dashboard:hover{
 }
 div#d_main{
     display: flex;
-    min-height: 100vh;
+    height: 100vh;
+    width: 100%;
+}
+div#d_main div#dashboard_content{
+    margin-top: 3.2rem;
+    overflow-y: auto;
+    overflow-x: hidden;
+    scrollbar-color: var(--main) var(--input_background);
+    width: 100%;
 }
 div#d_main div#side_bar{
+    display: flex;
+    flex-direction: column;
+    place-items: center;
     background-color: var(--main);
-    margin: 0px 0px 0px 0px;
-}
-div#d_main > div:nth-child(2){
-    width: 100%;
+    margin: 3.2rem 0px 0px 0px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    scrollbar-color: var(--secundary) var(--third);
+    scrollbar-width: none;
 }
 div#d_main div#side_bar > a > button#btn_dashboard{
     border-top: 1.5px solid var(--secundary);
@@ -580,8 +597,8 @@ div#d_main div#side_bar > a > button svg{
     margin-bottom: 5px;
 }
 div#d_main div#side_bar > a > button p{
-    font-weight: 600;
-    font-size: 0.8rem;
+    font-weight: 550;
+    font-size: 0.72rem;
 }
 div#d_main div#side_bar > a{
     text-decoration: none;

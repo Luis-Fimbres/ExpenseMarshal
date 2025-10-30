@@ -20,7 +20,7 @@
     <section id="header">
         <header>
             <div id="hamburger">
-                <a href="index.html"><button><svg viewBox="0 0 32 32"><path d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z"/></svg></button></a>
+                <button onclick="dashboard_dropDown_menu()"><svg viewBox="0 0 32 32"><path d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z"/></svg></button>
             </div>
             <div id="header_left">
                 <div>
@@ -50,7 +50,6 @@
     <!-------------------------------------------TOP HEADER & CONTINUATION--------------------------------------------->
     <div id="d_main">
         <div id="side_bar">
-            <div id="top_space">Howdy!: this is hidden text</div>
             <a><button id="btn_dashboard"><div>
                 <svg viewBox="0 0 40 35"><path d="M32.5 11.1516V1.25H26.25V5.81641L20 0L0 18.75H5V35H16.25V22.5H23.75V35H35V18.75H40L32.5 11.1516Z"/></svg>
                 <p>Dashboard</p>
@@ -77,7 +76,6 @@
             </div></button></a>
         </div>
         <div id="dashboard_content">
-            <div id="top_space">Howdy!: this is hidden text</div>
             <!-------------------------------------------QUICK SUMMARY--------------------------------------------->
             <section id="balance_summary">
                 <div id="dashboard_top"><h1>Dashboard</h1></div>
@@ -140,6 +138,15 @@
         </div>
     </div>
     </main>
+    <script src="./js/script.js"></script>
+    <div id="size_error">
+        <h2>:(</h2>
+        <p>Sorry, your resolution is not supported</p>
+        <p>If you have this page windowed, making the window bigger might solve your problem</p>
+        <p>If you are on a mobile device, maybe landscape orientation might help</p>
+        <p>If nothing works, sorry once again…</p>
+        <p>- ExpenseMarshal</p>
+    </div>
 </body>
 
 </html>
